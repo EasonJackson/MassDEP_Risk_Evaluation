@@ -35,7 +35,7 @@ GQP_Fall2018
  
  ![PH](/Skip_gram.png "Skip-gram")
  
- ### 3.Word2Vec Model
+### 3.Word2Vec Model
  - Neural Network Structures
  
  ![PH](/word2vec_model.png "Word2Vec")
@@ -43,5 +43,9 @@ GQP_Fall2018
  - Loss Function
  Cross-entropy
 
- ### 4.Validation of Word2Vec Embedding
+### 4.Validation of Word2Vec Embedding
  - Comparison between Words Cosine Similarities
+ 
+### 5.Deep Neural Network for Flag Condition Classifications
+ - Convolutional Neural Network (CNN)
+ - Long Short Term Memmory (LSTM)
