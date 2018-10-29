@@ -7,8 +7,8 @@ GQP_Fall2018
  
     Items | Example
     ---|---
-    Abbreviations | * "Immediate Response Action (IRA)", * "Massachusetts Department of Environmental Protection (DEP)", * "Substantial Release Migration (SRM)"
-    Addresses | "218 South Street in Auburn, Massachusetts", "218 South Street, Auburn MA 01501"
+    Abbreviations | "Immediate Response Action (IRA)", <br>"Massachusetts Department of Environmental Protection (DEP)", <br>"Substantial Release Migration (SRM)"
+    Addresses | "218 South Street in Auburn, Massachusetts", <br>"218 South Street, Auburn MA 01501"
     Dates | "June 2017"
     Numbers |
     No. of street | 
