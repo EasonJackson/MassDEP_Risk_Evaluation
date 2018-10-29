@@ -33,7 +33,7 @@ GQP_Fall2018
     * Skip-gram selecting input words and targets
  Skip-gram:
  
- ![PH](/Skip_gram.png "Skip-gram")
+ ![PH](/Skip_gram.png "Skip-gram" =300x200)
  
  ### 3.Word2Vec Model
- ![PH](/word2vec_model.png "Word2Vec")
+ ![PH](/word2vec_model.png "Word2Vec" =300x200)
