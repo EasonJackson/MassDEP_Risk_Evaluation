@@ -36,4 +36,12 @@ GQP_Fall2018
  ![PH](/Skip_gram.png "Skip-gram")
  
  ### 3.Word2Vec Model
+ - Neural Network Structures
+ 
  ![PH](/word2vec_model.png "Word2Vec")
+ 
+ - Loss Function
+ Cross-entropy
+
+ ### 4.Validation of Word2Vec Embedding
+ - Comparison between Words Cosine Similarities
