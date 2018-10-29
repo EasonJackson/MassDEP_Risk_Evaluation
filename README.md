@@ -4,9 +4,10 @@ GQP_Fall2018
 ## Workflow
 ### 1.Text Cleaning
  - Replacing
+ 
     Items | Example
     ---|---
-    Abbreviations | "Immediate Response Action (IRA)", "Massachusetts Department of Environmental Protection (DEP)", "Substantial Release Migration (SRM)"
+    Abbreviations | * "Immediate Response Action (IRA)", * "Massachusetts Department of Environmental Protection (DEP)", * "Substantial Release Migration (SRM)"
     Addresses | "218 South Street in Auburn, Massachusetts", "218 South Street, Auburn MA 01501"
     Dates | "June 2017"
     Numbers |
@@ -18,6 +19,7 @@ GQP_Fall2018
     Regulations
     Chemicals
     Legal terms quotes
+    
  - Removing
     * Tables and forms within text part
     * Footnotes
