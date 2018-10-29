@@ -15,9 +15,8 @@ GQP_Fall2018
     Regulation and Forms | "310 CMR 40.0420(7)", <br>"Forms BWSC 123"
     Measurements | "95,832 square feet (approximately 2.20 acres)", <br>"approximately 50' south of the release area", <br>"6-7' below grade", <br>"<10 ppmv", <br>"within 1⁄2-1' of the water table"
     RTN Numbers | "RTN 2-20220"
-    ---|---
     Chemicals | 
-    Legal terms quotes
+    Legal Terms Quotes | "‘significant risk’", <br>"“level of diligence reasonably necessary to obtain the quantity and quality of information adequate to assess”"
     Names | "Robert L. Haroian"
     
  - Removing
@@ -31,5 +30,6 @@ GQP_Fall2018
  - Compose sentence with list of words
  - Mini batch GD
     * Randomly select sentences
-    * Linearly select input words from sentence
-    * 
+    * Skip-gram selecting input words and targets
+ Skip-gram:
+ (/Skip_gram.png "Skip-gram")
