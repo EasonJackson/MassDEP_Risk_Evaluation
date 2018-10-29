@@ -8,11 +8,11 @@ GQP_Fall2018
     * Addresses
     * Dates
     * Numbers 
-       ** No. of street, 
-       ** longitude & latitude, 
-       ** Inches and feet, 
-       ** Regulation #, 
-       ** Measurements
+       * * No. of street, 
+       * * longitude & latitude, 
+       * * Inches and feet, 
+       * * Regulation #, 
+       * * Measurements
     * Regulations
     * Chemicals
     * Legal terms quotes
