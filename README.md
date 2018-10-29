@@ -10,7 +10,7 @@ GQP_Fall2018
     Abbreviations | "Immediate Response Action (IRA)", <br>"Massachusetts Department of Environmental Protection (DEP)", <br>"Substantial Release Migration (SRM)"
     Addresses | "218 South Street in Auburn, Massachusetts", <br>"218 South Street, Auburn MA 01501"
     Dates and Time | "June 2017", <br>"June 16, 2017" <br>"9:57 a.m.", <br>"On June 13 & 14, 2017"
-    Numbers | ***
+    **Numbers** | ***
     Longitudes and Latitudes | "42o10'36" north latitude (42.17650 °N), 71o50'19" east longitude (-71.83856 °W)" 
     Regulation and Forms | "310 CMR 40.0420(7)", <br>"Forms BWSC 123"
     Measurements | "95,832 square feet (approximately 2.20 acres)", <br>"approximately 50' south of the release area", <br>"6-7' below grade", <br>"<10 ppmv", <br>"within 1⁄2-1' of the water table"
@@ -32,4 +32,4 @@ GQP_Fall2018
     * Randomly select sentences
     * Skip-gram selecting input words and targets
  Skip-gram:
- (/Skip_gram.png "Skip-gram")
+ ![Alt](/Skip_gram.png "Skip-gram")
