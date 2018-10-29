@@ -2,23 +2,23 @@
 GQP_Fall2018
 
 ## Workflow
-### Text Cleaning
+### 1.Text Cleaning
  - Replacing
-    Abbreviations
-    Addresses
-    Dates
-    Numbers 
-      No. of street, 
-      longitude & latitude, 
-      Inches and feet, 
-      Regulation #, 
-      Measurements
-    Regulations
-    Chemicals
-    Legal terms quotes
+    * Abbreviations
+    * Addresses
+    * Dates
+    * Numbers 
+       ** No. of street, 
+       ** longitude & latitude, 
+       ** Inches and feet, 
+       ** Regulation #, 
+       ** Measurements
+    * Regulations
+    * Chemicals
+    * Legal terms quotes
  - Removing
-    Tables and forms within text part
-    Footnotes
-    Captions within text part
-    Special characters (&, and so on)
+    * Tables and forms within text part
+    * Footnotes
+    * Captions within text part
+    * Special characters (&, and so on)
 
