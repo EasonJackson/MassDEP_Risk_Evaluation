@@ -1,0 +1,4 @@
+input_dir: './data/test/'
+label_file: './data/Forms_Results.xlsx'
+pattern: "*.pdf"
+ignore: "._*"
