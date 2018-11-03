@@ -2,6 +2,12 @@
 # MassDEP website with specified RTN-submit time pairs
 # Author @Ethan 2018
 
+# To run the script
+# In Shell:
+# python3 crawler.py <full_name_of_TSAUD_file.xlsx>
+# If run in notebook:
+# Change TSAUD_file to <full_name_of_TSAUD_file.xlsx> instead
+
 import requests
 import re
 import os
