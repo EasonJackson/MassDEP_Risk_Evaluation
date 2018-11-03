@@ -158,12 +158,12 @@ def open_xlsx_rtn_time_list():
     '''
     workbook = xlrd.open_workbook(TSAUD_file)
     sheet = workbook.sheet_by_index(0)
-    rtns_submitTime = {} # index 0 and 2
+    rtns_submitTime = {} # index 0 and 1
 
     for rowx in range(sheet.nrows):
         col = sheet.row_values(rowx)
         rtns_submitTime[str(col[0])]
-        submit_time.append(re.match(TIME_PATTERN, str(col[2])).group(0))
+        submit_time.append(re.match(TIME_PATTERN, str(col[1])).group(1))
 
     return rtns_submitTime
 
