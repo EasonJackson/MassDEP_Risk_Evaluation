@@ -141,6 +141,9 @@ def check_time_match(text, time):
     flg: indicator on whether time matches
     time_result: real submit time from website
     '''
+    
+    if text is None:
+        return False, None
 
     submit_time_raw_text = text[2]
     time_result = re.match(SUBMIT_RAW_TIME_FORMAT, submit_time_raw_text).group(0)
