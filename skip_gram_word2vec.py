@@ -2,6 +2,7 @@ import tensorflow as tf
 import re
 import numpy as np
 import collections
+import os
 
 
 # Constants
@@ -29,8 +30,8 @@ def get_vocabulary(data_raw):
     for sentence in data_raw:
         word_list = sentence.split()
         for word in word_list:
-            word = lower(word)
-            word = re.sub(r'[~a-z]', "", word)
+            word = word.lower()
+            word = re.sub('\W', '', word)
             if word not in vocab:
                 vocab.append(word)
     return vocab
@@ -50,14 +51,17 @@ def word_int_mapping(vocab, data_raw):
     word_to_int = {}
     int_to_word = {}
     for index, word in enumerate(vocab):
-        word_to_int[word] = index
+        word_to_int[word] = index + 1
         int_to_word[index] = word
 
     data = []
     for sentence in data_raw:
         tmp = []
         for word in sentence.split():
-            tmp.append(word_to_int[word])
+            if word in word_to_int:
+                tmp.append(word_to_int[word])
+            else:
+                tmp.append(0)
         data.append(tmp)
 
     return word_to_int, int_to_word, data
@@ -197,7 +201,7 @@ def run(data_raw, num_steps=10000):
 
             if step % 2000 == 0:
                 if step > 0:
-                average_loss /= 2000
+                    average_loss /= 2000
                 # The average loss is an estimate of the loss over the last 2000 batches.
                 print('Average loss at step ', step, ': ', average_loss)
                 average_loss = 0
@@ -216,4 +220,49 @@ def run(data_raw, num_steps=10000):
                     print(log_str)
 
         final_embeddings = normalized_embeddings.eval()
+
+
+def get_raw_text():
+    files_n = os.listdir('Data/Train/N')
+    files_y = os.listdir('Data/Train/Y')
+    files = []
+    for file in files_n:
+        files.append('Data/Train/N/' + file)
+
+    for file in files_y:
+        files.append('Data/Train/Y/' + file)
+
+    final_text = []
+    for file in files:
+        with open(file, 'r', encoding='utf-8') as f:
+            print('Read file: {0}'.format(file))
+            doc = f.read()
+            sentences = doc.split('.')
+            for sentence in sentences:
+                #if re.match(r'^[\w]+$', sentence) is None:
+                sentence = sentence.strip()
+                if len(sentence) > 0:
+                    final_text.append(sentence)
+
+    output = open('Data/final_text.txt', 'w')
+    for sentence in final_text:
+        output.write(sentence + '\r')
+
+
+if __name__ == "__main__":
+    
+    #run()
+    word_to_int = {}
+    int_to_word = {}
+    data = []
+    with open('Data/word_to_int.txt', 'r') as f:
+        for line in f:
+            tmp = line.split(':')
+            word_to_int[tmp[0]] = int(tmp[1])
+            int_to_word[tmp[1].strip()] = tmp[0]
+
+    with open('Data/data_vec.txt', 'r') as f:
+        for line in f:
+            tmp = [int(x.strip()) for x in line.strip()[1 : -1].split(',')]
+            data.append(tmp)
 
