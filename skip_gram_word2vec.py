@@ -230,7 +230,7 @@ def get_raw_text():
         files.append('Data/Train/N/' + file)
 
     for file in files_y:
-        files.append('Data/Train/Y/' + file)
+       files.append('Data/Train/Y/' + file)
 
     final_text = []
     for file in files:
